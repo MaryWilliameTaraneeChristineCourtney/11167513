@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Hero Light';
+    src: url('hero_light-webfont.woff2') format('woff2'),
+         url('hero_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	max-width:100%;
+	color:black;
+	font-family: "Hero Light", Hero, Garamond;
+	text-align:center;
+	background-image:url('http://www.elevensixteenseventyfivethirteen.com/Images/IMG_1335.jpg');
+	/*background-color:rgba(128,128,128,1.00);*/
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.opacity {
+	background-color:rgba(255,255,255,0.5);
+	}
+.wrap a:link {
+	color:white;
+	background-color:transparent;
+	text-decoration:none;
+	font-variant:small-caps;
+	font-size:16px;
+	padding-left:30px;
+	padding-right:30px;
+	display:inline;
+	}
+.wrap a:hover {
+	text-decoration:underline;
+	display:inline;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+	}
+.wrap a:visited {
+	color:#CCCCCC;
+	text-decoration:underline;
+	display:inline;
+	}
+.wrap {
+	position:relative;
+	top:25%;
+	margin:auto;
+	width:100%;
+	}
+.wrap ul {
+	display:inline;
+	}
+.wrap li {
+	display:inline;
+	}
+.wrap a {
+	display:inline;
+	}	
+#header {
+	background:#000000;
+	float:left;
+	padding:5px;
+	height:2.5%;
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index: 3;
+	}
+.gallery {
+	margin-top:20px;
+	border: 0px transparent;
+	box-shadow: 0px 0px 10px 5px #888888;
+	}
+#pics img {
+	opacity:0.5;
+	}
+#pics img:hover {
+	opacity:1;
+	box-shadow:0px 0px 10px 5px #888888;
+	}
+.cell {
+	height:100px;
+	background-color:rgba(255,255,255,0.75);
+    display:table;
+    table-layout:fixed;
+    width:100%;
+	vertical-align:middle;
+	}
+.underthecell {
+    width:90%;
+	height:100%;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+	}
+div.pics::-webkit-scrollbar {
+	width:3px;
+	height:3px;
+	}
+div.pics::-webkit-scrollbar-track {
+	background-color: transparent;
+	-webkit-border-radius:3px;
+	}
+div.pics::-webkit-scrollbar-thumb:horizontal {
+	background-color:#CCCCCC;
+	-webkit-border-radius:3px;
+	}
+div.pics::-webkit-scrollbar-thumb:horizontal:hover {
+	background:#888888;
+	}
+div.pics::-moz-scrollbar {
+	width:3px;
+	height:3px;
+	}
+div.pics::-moz-scrollbar-track {
+	background-color: transparent;
+	-webkit-border-radius:3px;
+	}
+div.pics::-moz-scrollbar-thumb:horizontal {
+	background-color:#CCCCCC;
+	-webkit-border-radius:3px;
+	}
+div.pics::-moz-scrollbar-thumb:horizontal:hover {
+	background:#888888;
+	}
+div.pics::-ms-scrollbar {
+	width:3px;
+	height:3px;
+	}
+div.pics::-ms-scrollbar-track {
+	background-color: transparent;
+	-webkit-border-radius:3px;
+	}
+div.pics::-ms-scrollbar-thumb:horizontal {
+	background-color:#CCCCCC;
+	-webkit-border-radius:3px;
+	}
+div.pics::-ms-scrollbar-thumb:horizontal:hover {
+	background:#888888;
+	}
+div.pics::-o-scrollbar {
+	width:3px;
+	height:3px;
+	}
+div.pics::-o-scrollbar-track {
+	background-color: transparent;
+	-webkit-border-radius:3px;
+	}
+div.pics::-o-scrollbar-thumb:horizontal {
+	background-color:#CCCCCC;
+	-webkit-border-radius:3px;
+	}
+div.pics::-o-scrollbar-thumb:horizontal:hover {
+	background:#888888;
+	}
+small {
+	font-size:10px
+	}
+h1 {
+	font-size:48px;
+	font-weight:normal;
+}
+hr {
+	width:100%;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+	vertical-align:bottom;
+}
+.panel{
+    min-width: 100%;
+    height: 97.5%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: -150%;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    z-index: 2;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.panel:target{
+    margin-top:0;
+    background-color:rgba(255,255,255,0.5);
+}
+
+.wrapper {
+	text-align:center;
+	margin:5%;
+}
+
+a {
+	color:white;
+	text-decoration:none;
+}
+
+.title {
+	width:100%;
+	height:auto;
+	vertical-align:top;
+}
+
+#home:target ~ #header #navigation #link-home,
+#about:target ~ #header #navigation #link-about,
+#portfolio:target ~ #header #navigation #link-portfolio,
+#contact:target ~ #header #navigation #link-contact
+
